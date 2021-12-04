@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class QuestionsController < ApplicationController
   before_action :set_question!, only: %i[edit update destroy show]
 
@@ -19,8 +21,7 @@ class QuestionsController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @question.update question_params

@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class AnswersController < ApplicationController
   before_action :set_question!
   before_action :set_answer!, except: :create
-  
+
   def update
     if @answer.update answer_params
       flash[:success] = 'Answer has updated!'
@@ -11,8 +13,7 @@ class AnswersController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def destroy
     @answer.destroy
@@ -41,6 +42,7 @@ class AnswersController < ApplicationController
   def set_question!
     @question = Question.find params[:question_id]
   end
+
   def set_answer!
     @answer = @question.answers.find params[:id]
   end
