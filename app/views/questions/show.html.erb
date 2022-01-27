@@ -14,12 +14,14 @@
   data: {method: :delete, confirm: 'Are you sure?'} %>
 
 <h3>Whrite your answer</h3>
+
 <%= render 'answers/form' %>
 
 <h2 class='mt-5'>Answers</h2>
+
 <% @answers.each do |answer| %>
   <hr>
-  <article class='mb-3'>
+  <article class='mb-3' id="answer-<%= answer.id %>">
     <time datatime="<%= answer.created_at_mod %>">
       <%= answer.created_at_mod %>
     </time>
