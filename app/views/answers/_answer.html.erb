@@ -1,5 +1,6 @@
 <hr>
-<article class='mb-3 card' id="answer-<%= answer.id %>">
+<%= tag.article class: '', id: dom_id(answer) do %>
+<article class='mb-3 card' id="<%= dom_id answer %>">
   <div class="card-body">
     <section class="card-text">
       <small>
@@ -17,3 +18,4 @@
                 data: {method: :delete, confirm: 'Are you sure?'} %>
   </div>
 </article>
+<% end %>
