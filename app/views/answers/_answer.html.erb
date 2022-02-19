@@ -1,0 +1,19 @@
+<hr>
+<article class='mb-3 card' id="answer-<%= answer.id %>">
+  <div class="card-body">
+    <section class="card-text">
+      <small>
+        <time datatime="<%= answer.created_at_mod %>">
+          <%= answer.created_at_mod %>
+        </time>
+      </small>
+      <div class="mt-2 mb-3">
+        <%= sanitize answer.body %>
+      </div>
+    </section>
+
+    <%= link_to 'Edit', edit_question_answer_path(question, answer), class: 'btn btn-secondary' %>
+    <%= link_to 'Delete', question_answer_path(question, answer), class: 'btn btn-danger btn-sm',
+                data: {method: :delete, confirm: 'Are you sure?'} %>
+  </div>
+</article>

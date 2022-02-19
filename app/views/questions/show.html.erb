@@ -4,9 +4,9 @@
   <%= @question.created_at_mod %>
 </time>
 
-<p class='lead-my-3'>
-  <%= @question.body%>
-</p>
+<div class='lead-my-3'>
+  <%= sanitize @question.body%>
+</div>
 
 <%= link_to 'Back', questions_path(@question), class: 'btn btn-info' %>
 <%= link_to 'Edit', edit_question_path(@question), class: 'btn btn-secondary' %>
@@ -19,18 +19,7 @@
 
 <h2 class='mt-5'>Answers</h2>
 
-<% @answers.each do |answer| %>
-  <hr>
-  <article class='mb-3' id="answer-<%= answer.id %>">
-    <time datatime="<%= answer.created_at_mod %>">
-      <%= answer.created_at_mod %>
-    </time>
-
-    <p>
-      <%= answer.body%>
-    </p>
-    <%= link_to 'Edit', edit_question_answer_path(@question, answer), class: 'btn btn-secondary' %>
-    <%= link_to 'Delete', question_answer_path(@question, answer), class: 'btn btn-danger btn-sm',
-    data: {method: :delete, confirm: 'Are you sure?'} %>
-  </article>
-<% end %>
+<%= paginate @answers %>
+<%= render partial: 'answers/answer', collection:  @answers,
+  as: :answer, locals: { question: @question }%>
+<%= paginate @answers %>
