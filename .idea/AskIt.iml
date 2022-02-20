@@ -36,6 +36,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionview (v7.0.2.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v7.0.2.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v7.0.2.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel-serializers-xml (v1.0.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v7.0.2.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v7.0.2.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v7.0.2.2, ruby-3.0.3-p157) [gem]" level="application" />
@@ -52,6 +53,7 @@
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.9, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="digest (v3.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="draper (v4.0.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.2.0, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.2.0, ruby-3.0.3-p157) [gem]" level="application" />
@@ -91,10 +93,12 @@
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.2.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="request_store (v1.5.1, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.25.1, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.15.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.11.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v6.0.0, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, ruby-3.0.3-p157) [gem]" level="application" />
@@ -112,6 +116,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.4, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo-data (v1.2021.5, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="valid_email2 (v4.0.3, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.0, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webdrivers (v5.0.0, ruby-3.0.3-p157) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webpacker (v5.4.3, ruby-3.0.3-p157) [gem]" level="application" />
@@ -133,6 +138,8 @@
         <option value="benchmark" />
         <option value="channel" />
         <option value="controller" />
+        <option value="decorator" />
+        <option value="draper:install" />
         <option value="factory_bot:model" />
         <option value="generator" />
         <option value="helper" />
@@ -145,6 +152,7 @@
         <option value="model" />
         <option value="rack_profiler:install" />
         <option value="resource" />
+        <option value="rspec:decorator" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="scss:assets" />
@@ -152,6 +160,7 @@
         <option value="system_test" />
         <option value="task" />
         <option value="test_unit:channel" />
+        <option value="test_unit:decorator" />
         <option value="test_unit:generator" />
         <option value="test_unit:install" />
         <option value="test_unit:mailbox" />
@@ -166,6 +175,8 @@
         <option value="benchmark" />
         <option value="channel" />
         <option value="controller" />
+        <option value="decorator" />
+        <option value="draper:install" />
         <option value="factory_bot:model" />
         <option value="generator" />
         <option value="helper" />
@@ -178,6 +189,7 @@
         <option value="model" />
         <option value="rack_profiler:install" />
         <option value="resource" />
+        <option value="rspec:decorator" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="scss:assets" />
@@ -185,6 +197,7 @@
         <option value="system_test" />
         <option value="task" />
         <option value="test_unit:channel" />
+        <option value="test_unit:decorator" />
         <option value="test_unit:generator" />
         <option value="test_unit:install" />
         <option value="test_unit:mailbox" />
@@ -383,6 +396,7 @@
             <subtasks>
               <RakeTaskImpl description="Runs all tests, including system tests" fullCommand="test:all" id="all" />
               <RakeTaskImpl description="Run tests quickly, but also reset db" fullCommand="test:db" id="db" />
+              <RakeTaskImpl description="Run tests for {:decorators=&gt;&quot;test:prepare&quot;}" fullCommand="test:decorators" id="decorators" />
               <RakeTaskImpl description="Run system tests only" fullCommand="test:system" id="system" />
               <RakeTaskImpl description="" fullCommand="test:channels" id="channels" />
               <RakeTaskImpl description="" fullCommand="test:controllers" id="controllers" />

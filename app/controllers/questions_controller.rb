@@ -5,6 +5,7 @@ class QuestionsController < ApplicationController
 
   def index
     @pagy, @question = pagy Question.order(created_at: :desc)
+    @question = @question.decorate
   end
 
   def new
@@ -40,8 +41,10 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @question = @question.decorate
     @answer = @question.answers.build
     @pagy, @answers = pagy @question.answers.order(created_at: :desc)
+    @answers = @answers.decorate
   end
 
   private
