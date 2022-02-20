@@ -51,6 +51,10 @@ GEM
       globalid (>= 0.3.6)
     activemodel (7.0.2.2)
       activesupport (= 7.0.2.2)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (7.0.2.2)
       activemodel (= 7.0.2.2)
       activesupport (= 7.0.2.2)
@@ -88,6 +92,13 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     digest (3.1.0)
+    draper (4.0.2)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+      activemodel-serializers-xml (>= 1.0)
+      activesupport (>= 5.0)
+      request_store (>= 1.0)
+      ruby2_keywords
     erubi (1.10.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
@@ -96,6 +107,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.19.0)
       i18n (>= 1.6, < 2)
+    ffi (1.15.5)
     ffi (1.15.5-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -133,6 +145,8 @@ GEM
       timeout
     nio4r (2.5.8)
     nokogiri (1.13.1-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.1-x86_64-linux)
       racc (~> 1.4)
     pagy (5.10.1)
       activesupport
@@ -179,6 +193,8 @@ GEM
     rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.2.1)
+    request_store (1.5.1)
+      rack (>= 1.4)
     rexml (3.2.5)
     rubocop (1.25.1)
       parallel (~> 1.10)
@@ -192,9 +208,12 @@ GEM
     rubocop-ast (1.15.2)
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -228,6 +247,9 @@ GEM
     tzinfo-data (1.2021.5)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.1.0)
+    valid_email2 (4.0.3)
+      activemodel (>= 3.2)
+      mail (~> 2.5)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -258,6 +280,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  draper (~> 4.0)
   factory_bot_rails
   faker (~> 2)
   jbuilder (~> 2.7)
@@ -271,6 +294,7 @@ DEPENDENCIES
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
+  valid_email2
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
