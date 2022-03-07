@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UserDecorator < ApplicationDecorator
   delegate_all
 
@@ -6,5 +8,4 @@ class UserDecorator < ApplicationDecorator
 
     email.split('@')[0]
   end
-
 end

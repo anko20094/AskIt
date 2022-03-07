@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
-class UsersController  < ApplicationController
+class UsersController < ApplicationController
   before_action :require_no_authentication, only: %i[new create]
   before_action :require_authentication, only: %i[edit update]
   before_action :set_user!, only: %i[edit update]
 
-  def edit
-
-  end
+  def edit; end
 
   def update
     if @user.update user_params

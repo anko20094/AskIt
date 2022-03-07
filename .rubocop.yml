@@ -1,0 +1,15 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  # - rubocop-rspec
+  # - rubocop-rake
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0.3
+
+Style/Documentation:
+  Enabled: false
+
+Rails/FilePath:
+  EnforcedStyle: arguments
