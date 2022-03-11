@@ -34,6 +34,11 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'draper', '~> 4.0'
 gem 'pagy', '~> 5.10'
 gem 'valid_email2'
+gem 'rubyzip'
+gem 'caxlsx', '~> 3.0'
+gem 'caxlsx_rails', '~> 0.6.3'
+gem 'rubyXL', '~> 3.4'
+gem 'activerecord-import', '~> 1.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -42,6 +47,7 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'pry-rails'
 end
 
 group :development do
