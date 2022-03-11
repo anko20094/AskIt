@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   resources :questions do # == , only: %i[index new create edit update, destroy, show]
     resources :answers, only: %i[create destroy edit update]
   end
+
+  namespace :admin do
+    resources :users, only: %i[index create]
+  end
 end
