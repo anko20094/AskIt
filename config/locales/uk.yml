@@ -1,0 +1,32 @@
+uk:
+  activerecord:
+    models:
+      question: 'Запитання'
+    attributes:
+      question:
+        title: 'Заголовок'
+        body: 'Текст'
+  pages:
+    index:
+      title: 'Ласкаво просимо в AskIt!'
+  questions:
+    index:
+      questions: 'Запитання'
+      new_question: 'Нове запитання'
+    destroy:
+      success: 'Запитання видалене!'
+    create:
+      success: 'Запитання створене!'
+    update:
+      success: 'Запитання онволене!'
+  answers:
+    destroy:
+      success: 'Відповідь видалена!'
+    create:
+      success: 'Відповідь створена!'
+    update:
+      success: 'Відповідь онволена!'
+  menu:
+    home: 'Головна'
+    questions: 'Запитання'
+    users: 'Користувачі'

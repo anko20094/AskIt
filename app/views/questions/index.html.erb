@@ -1,8 +1,8 @@
 <%= provide :page_title, 'Questions' %>
-<% currently_at 'Questions' %>
+<% currently_at  t('menu.questions') %>
 
-<h1 class='mb-4'>Questions</h1>
-<%= link_to "New question", new_question_path, class: 'btn btn-primary mb-3'%>
+<h1 class='mb-4'><%= t('.questions') %></h1>
+<%= link_to t('.new_question'), new_question_path, class: 'btn btn-primary mb-3'%>
 <%= pagination @pagy %>
 <% @question.each do |question| %>
   <article class='card mt-3'>

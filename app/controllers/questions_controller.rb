@@ -16,7 +16,7 @@ class QuestionsController < ApplicationController
     @question = Question.new question_params
 
     if @question.save
-      flash[:success] = 'Question has created!'
+      flash[:success] = t('.success')
       redirect_to questions_path
     else
       render :new
@@ -27,7 +27,7 @@ class QuestionsController < ApplicationController
 
   def update
     if @question.update question_params
-      flash[:success] = 'Question has updated!'
+      flash[:success] = t('.success')
       redirect_to questions_path
     else
       render :edit
@@ -35,7 +35,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    flash[:success] = 'Question has deleted!'
+    flash[:success] = t('.success')
     @question.destroy
     redirect_to questions_path
   end
