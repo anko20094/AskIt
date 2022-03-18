@@ -12,22 +12,43 @@
         </ul>
 
         <ul class='nav col-12 col-lg-auto mb-2 mb-md-0'>
-          <% if user_signed_in? %>
-            <li class="dropdown">
-              <%= nav_tab current_user.name_or_email, '#',class: 'nav-link px-2 dropdown-toggle',
-                          data: { "bs-toggle": 'dropdown',}, current_page: current_page %>
+          <li class="dropdown">
+            <%= link_to '#', class: 'nav-link px-2 dropdown-toggle text-white', data: {"bs-toggle": 'dropdown'} do %>
+              <%= tag.div '', class: "flag #{I18n.locale}-flag mt-1" %>
+              <%= t I18n.locale %>
+            <% end %>
+
               <ul class="dropdown-menu">
-                <li><%= link_to 'Edit user', edit_user_path(current_user), class: 'dropdown-item' %></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><%= link_to 'Log Out', session_path, class: 'dropdown-item', data: {method: :delete} %></li>
+                <% I18n.available_locales.each do |locale| %>
+                  <li>
+                    <% if I18n.locale == locale %>
+                      <%= tag.span t(locale), class: 'dropdown-item' %>
+                    <% else %>
+                      <%= link_to t(locale), root_path(locale: locale), class: 'dropdown-item' %>
+                    <% end %>
+                  </li>
+                <% end %>
               </ul>
             </li>
-          <% else %>
-            <li><%= nav_tab "Sign Up", new_user_path,
-                          class: 'nav-link px-2', current_page: current_page %></li>
-            <li><%= nav_tab "Log In", new_session_path,
+          </ul>
+
+          <ul class='nav col-12 col-lg-auto mb-2 mb-md-0'>
+            <% if user_signed_in? %>
+              <li class="dropdown">
+                <%= nav_tab current_user.name_or_email, '#',class: 'nav-link px-2 dropdown-toggle',
+                            data: { "bs-toggle": 'dropdown',}, current_page: current_page %>
+                <ul class="dropdown-menu">
+                  <li><%= link_to 'Edit user', edit_user_path(current_user), class: 'dropdown-item' %></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><%= link_to 'Log Out', session_path, class: 'dropdown-item', data: {method: :delete} %></li>
+                </ul>
+              </li>
+            <% else %>
+              <li><%= nav_tab "Sign Up", new_user_path,
                             class: 'nav-link px-2', current_page: current_page %></li>
-            <% end %>
+              <li><%= nav_tab "Log In", new_session_path,
+                              class: 'nav-link px-2', current_page: current_page %></li>
+              <% end %>
         </ul>
       </nav>
     </div>

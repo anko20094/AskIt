@@ -40,6 +40,8 @@ gem 'rubyXL', '~> 3.4'
 gem 'rubyzip'
 gem 'valid_email2'
 gem 'rails-i18n', '~> 7'
+gem 'lokalise_rails', '~> 5'
+gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,4 +1,6 @@
 uk:
+  en: 'Англійська'
+  uk: 'Українська'
   activerecord:
     models:
       question: 'Запитання'
