@@ -1,6 +1,7 @@
 {
   "name": "app",
   "private": true,
+  "licence": "MIT",
   "dependencies": {
     "@popperjs/core": "^2.11.3",
     "@rails/activestorage": "^6.1.5",
