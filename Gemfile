@@ -31,17 +31,17 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # gem 'kaminari'
-gem 'activerecord-import', '~> 1.3.0'
+gem 'activerecord-import', '~> 1.4.0'
 gem 'caxlsx', '~> 3.0'
 gem 'caxlsx_rails', '~> 0.6.3'
+gem 'dotenv-rails'
 gem 'draper', '~> 4.0'
+gem 'lokalise_rails', '~> 5'
 gem 'pagy', '~> 5.10'
+gem 'rails-i18n', '~> 7'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip'
 gem 'valid_email2'
-gem 'rails-i18n', '~> 7'
-gem 'lokalise_rails', '~> 5'
-gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

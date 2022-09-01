@@ -26,9 +26,126 @@
       <excludeFolder url="file://$MODULE_DIR$/public/system" />
       <excludeFolder url="file://$MODULE_DIR$/components" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote: ruby-3.0.3-p157" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="ruby-3.0.3-p157" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, Remote: ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actioncable (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actiontext (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionview (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activejob (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel-serializers-xml (v1.0.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord-import (v1.3.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activestorage (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.18, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.12.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.33, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v3.37.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="caxlsx (v3.2.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="caxlsx_rails (v0.6.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="childprocess (v4.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.10, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="digest (v3.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.7.6, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v2.7.6, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="draper (v4.0.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.2.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.2.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v2.21.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v2.3.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-gzip (v0.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v2.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="globalid (v1.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="htmlentities (v4.3.4, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.10.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.6.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lokalise_manager (v3.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lokalise_rails (v5.0.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="loofah (v2.18.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.16.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.5.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.2.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-protocol (v0.1.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.3.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.8, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.13.6, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pagy (v5.10.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.22.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v3.1.2.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry (v0.14.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry-rails (v0.3.9, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.7, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v5.6.4, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="racc (v1.6.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.3.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-mini-profiler (v3.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-proxy (v0.7.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.4.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-i18n (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="railties (v7.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.5.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="request_store (v1.5.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.5, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.30.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.18.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.14.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.15.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-lokalise-api (v6.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.11.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.5, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyXL (v3.4.25, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-rails (v6.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.2.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="semantic_range (v3.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.4.4, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strscan (v3.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="timeout (v0.3.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.4, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo-data (v1.2022.1, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.1.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="valid_email2 (v4.0.3, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webdrivers (v5.0.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webpacker (v6.0.0.rc.6@6b7aa2, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.9, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.5, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.6.0, ruby-3.0.3-p157) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="zlib (v2.1.1, ruby-3.0.3-p157) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
@@ -51,6 +168,7 @@
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
+        <option value="lokalise_rails:install" />
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
@@ -88,6 +206,7 @@
         <option value="integration_test" />
         <option value="jbuilder" />
         <option value="job" />
+        <option value="lokalise_rails:install" />
         <option value="mailbox" />
         <option value="mailer" />
         <option value="migration" />
@@ -366,7 +485,7 @@
           <RakeTaskImpl id="webpacker">
             <subtasks>
               <RakeTaskImpl description="Installs Webpacker binstubs in this application" fullCommand="webpacker:binstubs" id="binstubs" />
-              <RakeTaskImpl description="Verifies that webpack &amp; webpack-dev-server are present" fullCommand="webpacker:check_binstubs" id="check_binstubs" />
+              <RakeTaskImpl description="Verifies that bin/webpacker is present" fullCommand="webpacker:check_binstubs" id="check_binstubs" />
               <RakeTaskImpl description="Verifies if Node.js is installed" fullCommand="webpacker:check_node" id="check_node" />
               <RakeTaskImpl description="Verifies if Yarn is installed" fullCommand="webpacker:check_yarn" id="check_yarn" />
               <RakeTaskImpl description="Remove old compiled webpacks" fullCommand="webpacker:clean[keep,age]" id="clean[keep,age]" />
@@ -374,19 +493,7 @@
               <RakeTaskImpl description="Compile JavaScript packs using webpack for production with digests" fullCommand="webpacker:compile" id="compile" />
               <RakeTaskImpl description="Provide information on Webpacker's environment" fullCommand="webpacker:info" id="info" />
               <RakeTaskImpl description="Install Webpacker in this application" fullCommand="webpacker:install" id="install" />
-              <RakeTaskImpl id="install">
-                <subtasks>
-                  <RakeTaskImpl description="Install everything needed for Angular" fullCommand="webpacker:install:angular" id="angular" />
-                  <RakeTaskImpl description="Install everything needed for Coffee" fullCommand="webpacker:install:coffee" id="coffee" />
-                  <RakeTaskImpl description="Install everything needed for Elm" fullCommand="webpacker:install:elm" id="elm" />
-                  <RakeTaskImpl description="Install everything needed for Erb" fullCommand="webpacker:install:erb" id="erb" />
-                  <RakeTaskImpl description="Install everything needed for React" fullCommand="webpacker:install:react" id="react" />
-                  <RakeTaskImpl description="Install everything needed for Stimulus" fullCommand="webpacker:install:stimulus" id="stimulus" />
-                  <RakeTaskImpl description="Install everything needed for Svelte" fullCommand="webpacker:install:svelte" id="svelte" />
-                  <RakeTaskImpl description="Install everything needed for Typescript" fullCommand="webpacker:install:typescript" id="typescript" />
-                  <RakeTaskImpl description="Install everything needed for Vue" fullCommand="webpacker:install:vue" id="vue" />
-                </subtasks>
-              </RakeTaskImpl>
+              <RakeTaskImpl description="Verifies if the Webpacker config is present" fullCommand="webpacker:verify_config" id="verify_config" />
               <RakeTaskImpl description="Verifies if Webpacker is installed" fullCommand="webpacker:verify_install" id="verify_install" />
               <RakeTaskImpl description="Support for older Rails versions" fullCommand="webpacker:yarn_install" id="yarn_install" />
               <RakeTaskImpl description="" fullCommand="webpacker:clean" id="clean" />
@@ -404,6 +511,12 @@
           </RakeTaskImpl>
           <RakeTaskImpl description="" fullCommand="default" id="default" />
           <RakeTaskImpl description="" fullCommand="environment" id="environment" />
+          <RakeTaskImpl id="lokalise_rails">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="lokalise_rails:export" id="export" />
+              <RakeTaskImpl description="" fullCommand="lokalise_rails:import" id="import" />
+            </subtasks>
+          </RakeTaskImpl>
           <RakeTaskImpl id="railties">
             <subtasks>
               <RakeTaskImpl id="install">
