@@ -1,0 +1,26 @@
+<article class='card mt-3'>
+  <section class="card-header">
+    <%= question.user.gravatar %>
+    <%= question.user.name_or_email %>
+  </section>
+
+  <div class='card-body'>
+    <h4><%= question.title %></h4>
+
+    <section class='card-text'>
+      <time datatime="<%= question.created_at_mod %>">
+        <small><%= question.created_at_mod %></small>
+      </time>
+
+      <p class='my-2'>
+        <%= truncate strip_tags(question.body), length: 150, omission: '...(continued)' %>
+      </p>
+    </section>
+
+    <%= link_to 'Show', question_path(question), class: 'btn btn-info' %>
+    <%= link_to 'Edit', edit_question_path(question), class: 'btn btn-secondary' %>
+    <%= link_to 'Destroy', question_path(question), class: 'btn btn-danger',
+                data: {method: :delete, confirm: 'Are you sure?'} %>
+
+  </div>
+</article>

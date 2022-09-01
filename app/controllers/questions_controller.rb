@@ -4,8 +4,8 @@ class QuestionsController < ApplicationController
   before_action :set_question!, only: %i[edit update destroy show]
 
   def index
-    @pagy, @question = pagy Question.order(created_at: :desc)
-    @question = @question.decorate
+    @pagy, @questions = pagy Question.order(created_at: :desc)
+    @questions = @questions.decorate
   end
 
   def new
@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new question_params
+    @question = current_user.questions.build question_params
 
     if @question.save
       flash[:success] = t('.success')
