@@ -2,6 +2,7 @@
 
 class QuestionDecorator < ApplicationDecorator
   delegate_all
+  decorates_association :user
 
   def created_at_mod
     l created_at, format: :long

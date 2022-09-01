@@ -9,7 +9,9 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:email]
     if user&.authenticate(params[:password])
-      do_sign_in(user)
+      do_sign_in(@user)
+      flash[:success] = t('answers.create.success', name: current_user.name_or_email)
+      redirect_to root_path
     else
       flash[:warning] = 'Incorrect mail and/or password!'
       redirect_to new_session_path
