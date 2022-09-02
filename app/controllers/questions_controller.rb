@@ -1,26 +1,17 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
-  before_action :set_question!, only: %i[edit update destroy show]
+  include QuestionsAnswers
+  before_action :set_question!, only: %i[show destroy edit update]
 
-  def index
-    @pagy, @questions = pagy Question.order(created_at: :desc)
-    @questions = @questions.decorate
+  def show
+    load_question_answers
   end
 
-  def new
-    @question = Question.new
-  end
-
-  def create
-    @question = current_user.questions.build question_params
-
-    if @question.save
-      flash[:success] = t('.success')
-      redirect_to questions_path
-    else
-      render :new
-    end
+  def destroy
+    @question.destroy
+    flash[:success] = t('.success')
+    redirect_to questions_path
   end
 
   def edit; end
@@ -34,17 +25,23 @@ class QuestionsController < ApplicationController
     end
   end
 
-  def destroy
-    flash[:success] = t('.success')
-    @question.destroy
-    redirect_to questions_path
+  def index
+    @pagy, @questions = pagy Question.includes(:user).order(created_at: :desc)
+    @questions = @questions.decorate
   end
 
-  def show
-    @question = @question.decorate
-    @answer = @question.answers.build
-    @pagy, @answers = pagy @question.answers.order(created_at: :desc)
-    @answers = @answers.decorate
+  def new
+    @question = Question.new
+  end
+
+  def create
+    @question = current_user.questions.build question_params
+    if @question.save
+      flash[:success] = t('.success')
+      redirect_to questions_path
+    else
+      render :new
+    end
   end
 
   private

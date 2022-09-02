@@ -4,6 +4,7 @@
   "licence": "MIT",
   "dependencies": {
     "@popperjs/core": "^2.11.3",
+    "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.1.5",
     "@rails/ujs": "^6.1.5",
     "@rails/webpacker": "^6.0.0-rc.6",

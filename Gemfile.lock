@@ -91,6 +91,9 @@ GEM
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (7.0.3)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     byebug (11.1.3)
     capybara (3.37.1)
       addressable
@@ -131,7 +134,7 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faker (2.22.0)
+    faker (2.23.0)
       i18n (>= 1.8.11, < 2)
     faraday (2.5.2)
       faraday-net_http (>= 2.0, < 3.1)
@@ -141,7 +144,6 @@ GEM
       zlib (~> 2.1)
     faraday-net_http (3.0.0)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     htmlentities (4.3.4)
@@ -184,8 +186,6 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8-x64-mingw32)
-      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     pagy (5.10.1)
@@ -203,7 +203,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
-    rack-mini-profiler (3.0.0)
+    rack-mini-profiler (2.3.4)
       rack (>= 1.2.0)
     rack-proxy (0.7.2)
       rack
@@ -256,6 +256,8 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.21.0)
       parser (>= 3.1.1.0)
+    rubocop-i18n (3.0.0)
+      rubocop (~> 1.0)
     rubocop-performance (1.14.3)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
@@ -278,8 +280,6 @@ GEM
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
@@ -310,9 +310,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2022.3)
-      tzinfo (>= 1.0.0)
     unicode-display_width (2.2.0)
+    uniform_notifier (1.16.0)
     valid_email2 (4.0.4)
       activemodel (>= 3.2)
       mail (~> 2.5)
@@ -335,13 +334,13 @@ GEM
     zlib (2.1.1)
 
 PLATFORMS
-  x64-mingw32
   x86_64-linux
 
 DEPENDENCIES
   activerecord-import (~> 1.4.0)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
+  bullet
   byebug
   capybara (>= 3.26)
   caxlsx (~> 3.0)
@@ -355,10 +354,11 @@ DEPENDENCIES
   pagy (~> 5.10)
   pry-rails
   puma (~> 5.0)
-  rack-mini-profiler (~> 3.0)
+  rack-mini-profiler (~> 2.0)
   rails (~> 7.0.0, >= 6.1.4.1)
   rails-i18n (~> 7)
   rubocop
+  rubocop-i18n (~> 3)
   rubocop-performance
   rubocop-rails
   rubyXL (~> 3.4)
@@ -377,4 +377,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.2.33
+   2.2.32
