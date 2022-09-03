@@ -135,6 +135,7 @@ GEM
       zlib (~> 2.1)
     faraday-net_http (3.0.0)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     htmlentities (4.3.4)
@@ -179,6 +180,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.8-x64-mingw32)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     pagy (5.10.1)
@@ -272,6 +275,8 @@ GEM
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -300,6 +305,8 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.3)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.2.0)
     uniform_notifier (1.16.0)
     valid_email2 (4.0.4)
@@ -324,6 +331,7 @@ GEM
     zlib (2.1.1)
 
 PLATFORMS
+  x64-mingw32
   x86_64-linux
 
 DEPENDENCIES

@@ -1,162 +1,162 @@
-en:
+uk:
   activerecord:
     attributes:
       comment:
-        body: Body
+        body: Текст
       answer:
-        body: Body
-        question: Question
+        body: Текст
+        question: Питання
       question:
-        body: Body
-        title: Title
-        tags: Tags
-        tag_ids: Tags
+        body: Текст
+        title: Загаловок
+        tags: Теги
+        tag_ids: Теги
       user:
-        created_at: Created at
-        email: Email
-        name: Name
-        old_password: Old password
-        password: Password
-        password_confirmation: Password confirmation
-        updated_at: Updated at
-        role: Role
+        created_at: Створено
+        email: Пошта
+        name: Ім'я
+        old_password: Старий пароль
+        password: Пароль
+        password_confirmation: Підтвердження паролю
+        updated_at: Оновлено
+        role: Роль
     models:
-      question: Question
+      question: Питання
   admin:
     user_mailer:
       bulk_import_done:
-        subject: User import done | AskIt
+        subject: Імпорт користувачів завершено | AskIt
       bulk_import_fail:
-        subject: User import failed | AskIt
+        subject: Помилка імпорту користувачів | AskIt
       bulk_export_done:
-        subject: User export done | AskIt
+        subject: Експорт користувачів завершено | AskIt
     users:
       edit:
-        title: Edit user
+        title: Редагувати користувача
       destroy:
-        success: User deleted!
+        success: Користувача видалено!
       update:
-        success: User updated!
+        success: Користувач оновлений!
       create:
-        success: You'll get an email once this operation is done
+        success: Після завершення цієї операції ви отримаєте електронний лист
       index:
-        success: You'll get an email once this operation is done
-        download_zipped: Download zipped XLSX
-        title: Admin Users
+        success: Після завершення цієї операції ви отримаєте електронний лист
+        download_zipped: Завантажте заархівований XLSX
+        title: Адміністратори користувачів
         upload_form:
-          archive: Select archive
-          submit: Upload!
-        upload_zipped: Upload users from XLSX
+          archive: Виберіть архів
+          submit: Завантажити!
+        upload_zipped: Завантажуйте користувачів із XLSX
   comments:
     create:
-      success: Comment created!
+      success: Коментар створено!
     destroy:
-      success: Comment deleted!
+      success: Коментар видалено!
   answers:
     create:
-      success: Answer created!
+      success: Відповідь створено!
     destroy:
-      success: Answer deleted!
+      success: Відповідь видалено!
     edit:
-      title: Edit answer
+      title: Редагувати відповідь
     update:
-      success: Answer updated!
-  en: English
+      success: Відповідь оновлено!
+  en: Англійська
   global:
     errors:
-      invalid_format: has invalid format
+      invalid_format: має недійсний формат
     user:
       roles:
-        basic: Basic
-        moderator: Moderator
-        admin: Admin
+        basic: Базовий
+        moderator: Модератор
+        admin: Адмін
     button:
-      delete: Delete
-      edit: Edit
-      show: Show
-      submit: Submit
+      delete: Видалити
+      edit: Редагувати
+      show: Показти
+      submit: Надіслати
     dialog:
-      you_sure: Are you sure?
+      you_sure: Ти впевнений?
     flash:
-      already_signed_in: You are already signed in!
-      not_signed_in: You are not signed in!
-      not_authorized: You are not authorized to perform this action!
+      already_signed_in: Ви вже ввійшли!
+      not_signed_in: Ви не ввійшли!
+      not_authorized: Ви не маєте права виконувати цю дію!
     text:
-      omission: "... (continued)"
+      omission: ... (продовження)
   menu:
-    edit_profile: Profile
-    home: Home
-    log_in: Log In
-    log_out: Log out
-    questions: Questions
-    sign_up: Sign Up
-    users: Users
+    edit_profile: Профіль
+    home: Головна сторінка
+    log_in: Увійти
+    log_out: Вийти
+    questions: Запитання
+    sign_up: Зареєструватися
+    users: Користувачі
   pages:
     index:
-      title: Welcome to AskIt!
+      title: Ласкаво просимо до AskIt!
   questions:
     create:
-      success: Question created!
+      success: Питання створено!
     destroy:
-      success: Question deleted!
+      success: Питання видалено!
     edit:
-      title: Edit question
+      title: Редагувати питання
     index:
-      new: New question
-      title: Questions
-      search_by_tags: Search by tags
+      new: Нове запитання
+      title: Питання
+      search_by_tags: Пошук по тегах
     new:
-      title: New question
+      title: Нове запитання
     show:
-      answers: Answers
-      write_answer: Write your answer
-      comments: Comments
+      answers: Відповіді
+      write_answer: Напишіть свою відповідь
+      comments: Коментарі
     update:
-      success: Question updated!
-  uk: Ukrainian
+      success: Питання оновлено!
+  uk: Українська
   password_reset_mailer:
     reset_email:
-      subject: 'Password reset | AskIt'
+      subject: 'Скидання пароля | AskIt'
   password_resets:
-    fail: Could not reset your password...
+    fail: Не вдалося скинути пароль...
     edit:
-      title: Enter new password
+      title: Введіть новий пароль
       form:
-        submit: Reset my password!
+        submit: Скинути мій пароль!
     update:
-      success: Your password was reset!
+      success: Ваш пароль скинуто!
     create:
-      success: Password reset instructions were sent to your email address.
+      success: Інструкції щодо зміни пароля надіслано на вашу електронну адресу.
     new:
-      title: Reset password
+      title: Скинути пароль
       form:
-        email: Email
-        submit: Send reset instructions
-        back: Back to sign in
+        email: Електронна пошта
+        submit: Надіслати інструкції щодо скидання
+        back: Назад до входу
   sessions:
     create:
-      invalid_creds: Incorrect email and/or password!
-      success: Welcome back, %{name}!
+      invalid_creds: Неправильна електронна адреса та/або пароль!
+      success: З поверненням, %{name}!
     destroy:
-      success: See you later!
+      success: Побачимося пізніше!
     new:
       form:
-        email: Email
-        password: Password
-        remember_me: Remember me
-        submit: Sign in!
-        forgot_password: I forgot my password
-      title: Log In
+        email: Електронна пошта
+        password: Пароль
+        remember_me: Запам'ятати мене
+        submit: Увійти!
+        forgot_password: Я забув свій пароль
+      title: Увійти
   users:
     create:
-      success: Welcome to the app, %{name}!
+      success: Ласкаво просимо до сайту, %{name}!
     edit:
-      title: Edit profile
+      title: Редагувати профіль
     global:
       forms:
-        register: Register
-        save: Save
+        register: Зареєструватися
+        save: Зберегти
     new:
-      title: Registration
+      title: Реєстрація
     update:
-      success: Your profile was successfully updated!
+      success: Ваш профіль успішно оновлено!
