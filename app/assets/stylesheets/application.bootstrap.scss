@@ -1,3 +1,5 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
@@ -19,8 +21,10 @@
 @import "bootstrap/scss/card";
 @import "bootstrap/scss/pagination";
 @import "bootstrap/scss/alert";
+@import "bootstrap/scss/transitions";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
 
-@import '../styles/custom.scss';
+@import 'custom';
+@import "tom-select/src/scss/tom-select.bootstrap5";

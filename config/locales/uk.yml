@@ -1,34 +1,162 @@
 uk:
-  en: 'Англійська'
-  uk: 'Українська'
   activerecord:
-    models:
-      question: 'Запитання'
     attributes:
+      comment:
+        body: Текст
+      answer:
+        body: Текст
+        question: Питання
       question:
-        title: 'Заголовок'
-        body: 'Текст'
+        body: Текст
+        title: Загаловок
+        tags: Теги
+        tag_ids: Теги
+      user:
+        created_at: Створено
+        email: Пошта
+        name: Ім'я
+        old_password: Старий пароль
+        password: Пароль
+        password_confirmation: Підтвердження паролю
+        updated_at: Оновлено
+        role: Роль
+    models:
+      question: Питання
+  admin:
+    user_mailer:
+      bulk_import_done:
+        subject: Імпорт користувачів завершено | AskIt
+      bulk_import_fail:
+        subject: Помилка імпорту користувачів | AskIt
+      bulk_export_done:
+        subject: Експорт користувачів завершено | AskIt
+    users:
+      edit:
+        title: Редагувати користувача
+      destroy:
+        success: Користувача видалено!
+      update:
+        success: Користувач оновлений!
+      create:
+        success: Після завершення цієї операції ви отримаєте електронний лист
+      index:
+        success: Після завершення цієї операції ви отримаєте електронний лист
+        download_zipped: Завантажте заархівований XLSX
+        title: Адміністратори користувачів
+        upload_form:
+          archive: Виберіть архів
+          submit: Завантажити!
+        upload_zipped: Завантажуйте користувачів із XLSX
+  comments:
+    create:
+      success: Коментар створено!
+    destroy:
+      success: Коментар видалено!
+  answers:
+    create:
+      success: Відповідь створено!
+    destroy:
+      success: Відповідь видалено!
+    edit:
+      title: Редагувати відповідь
+    update:
+      success: Відповідь оновлено!
+  en: Англійська
+  global:
+    errors:
+      invalid_format: має недійсний формат
+    user:
+      roles:
+        basic: Базовий
+        moderator: Модератор
+        admin: Адмін
+    button:
+      delete: Видалити
+      edit: Редагувати
+      show: Показти
+      submit: Надіслати
+    dialog:
+      you_sure: Ти впевнений?
+    flash:
+      already_signed_in: Ви вже ввійшли!
+      not_signed_in: Ви не ввійшли!
+      not_authorized: Ви не маєте права виконувати цю дію!
+    text:
+      omission: ... (продовження)
+  menu:
+    edit_profile: Профіль
+    home: Головна сторінка
+    log_in: Увійти
+    log_out: Вийти
+    questions: Запитання
+    sign_up: Зареєструватися
+    users: Користувачі
   pages:
     index:
-      title: 'Ласкаво просимо в AskIt!'
+      title: Ласкаво просимо до AskIt!
   questions:
+    create:
+      success: Питання створено!
+    destroy:
+      success: Питання видалено!
+    edit:
+      title: Редагувати питання
     index:
-      questions: 'Запитання'
-      new_question: 'Нове запитання'
-    destroy:
-      success: 'Запитання видалене!'
-    create:
-      success: 'Запитання створене!'
+      new: Нове запитання
+      title: Питання
+      search_by_tags: Пошук по тегах
+    new:
+      title: Нове запитання
+    show:
+      answers: Відповіді
+      write_answer: Напишіть свою відповідь
+      comments: Коментарі
     update:
-      success: 'Запитання онволене!'
-  answers:
-    destroy:
-      success: 'Відповідь видалена!'
-    create:
-      success: 'Відповідь створена!'
+      success: Питання оновлено!
+  uk: Українська
+  password_reset_mailer:
+    reset_email:
+      subject: 'Скидання пароля | AskIt'
+  password_resets:
+    fail: Не вдалося скинути пароль...
+    edit:
+      title: Введіть новий пароль
+      form:
+        submit: Скинути мій пароль!
     update:
-      success: 'Відповідь онволена!'
-  menu:
-    home: 'Головна'
-    questions: 'Запитання'
-    users: 'Користувачі'
+      success: Ваш пароль скинуто!
+    create:
+      success: Інструкції щодо зміни пароля надіслано на вашу електронну адресу.
+    new:
+      title: Скинути пароль
+      form:
+        email: Електронна пошта
+        submit: Надіслати інструкції щодо скидання
+        back: Назад до входу
+  sessions:
+    create:
+      invalid_creds: Неправильна електронна адреса та/або пароль!
+      success: З поверненням, %{name}!
+    destroy:
+      success: Побачимося пізніше!
+    new:
+      form:
+        email: Електронна пошта
+        password: Пароль
+        remember_me: Запам'ятати мене
+        submit: Увійти!
+        forgot_password: Я забув свій пароль
+      title: Увійти
+  users:
+    create:
+      success: Ласкаво просимо до сайту, %{name}!
+    edit:
+      title: Редагувати профіль
+    global:
+      forms:
+        register: Зареєструватися
+        save: Зберегти
+    new:
+      title: Реєстрація
+    update:
+      success: Ваш профіль успішно оновлено!

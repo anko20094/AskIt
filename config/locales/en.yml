@@ -1,36 +1,162 @@
 en:
-  en: 'English'
-  uk: 'Ukraine'
   activerecord:
-    models:
-      question: 'Question'
     attributes:
+      comment:
+        body: Body
+      answer:
+        body: Body
+        question: Question
       question:
-        title: 'Title'
-        body: 'Body'
+        body: Body
+        title: Title
+        tags: Tags
+        tag_ids: Tags
+      user:
+        created_at: Created at
+        email: Email
+        name: Name
+        old_password: Old password
+        password: Password
+        password_confirmation: Password confirmation
+        updated_at: Updated at
+        role: Role
+    models:
+      question: Question
+  admin:
+    user_mailer:
+      bulk_import_done:
+        subject: User import done | AskIt
+      bulk_import_fail:
+        subject: User import failed | AskIt
+      bulk_export_done:
+        subject: User export done | AskIt
+    users:
+      edit:
+        title: Edit user
+      destroy:
+        success: User deleted!
+      update:
+        success: User updated!
+      create:
+        success: You'll get an email once this operation is done
+      index:
+        success: You'll get an email once this operation is done
+        download_zipped: Download zipped XLSX
+        title: Admin Users
+        upload_form:
+          archive: Select archive
+          submit: Upload!
+        upload_zipped: Upload users from XLSX
+  comments:
+    create:
+      success: Comment created!
+    destroy:
+      success: Comment deleted!
+  answers:
+    create:
+      success: Answer created!
+    destroy:
+      success: Answer deleted!
+    edit:
+      title: Edit answer
+    update:
+      success: Answer updated!
+  en: English
+  global:
+    errors:
+      invalid_format: has invalid format
+    user:
+      roles:
+        basic: Basic
+        moderator: Moderator
+        admin: Admin
+    button:
+      delete: Delete
+      edit: Edit
+      show: Show
+      submit: Submit
+    dialog:
+      you_sure: Are you sure?
+    flash:
+      already_signed_in: You are already signed in!
+      not_signed_in: You are not signed in!
+      not_authorized: You are not authorized to perform this action!
+    text:
+      omission: "... (continued)"
+  menu:
+    edit_profile: Profile
+    home: Home
+    log_in: Log In
+    log_out: Log out
+    questions: Questions
+    sign_up: Sign Up
+    users: Users
   pages:
     index:
-      title: 'Welcome to AskIt!'
+      title: Welcome to AskIt!
   questions:
+    create:
+      success: Question created!
+    destroy:
+      success: Question deleted!
+    edit:
+      title: Edit question
     index:
-      questions: 'Questions'
-      new_question: 'New question'
-    destroy:
-      success: 'Question has deleted!'
-    create:
-      success: 'Question has created!'
+      new: New question
+      title: Questions
+      search_by_tags: Search by tags
+    new:
+      title: New question
+    show:
+      answers: Answers
+      write_answer: Write your answer
+      comments: Comments
     update:
-      success: 'Question has updated!'
-  answers:
-    destroy:
-      success: 'Answer has deleted!'
-    create:
-      success: 'Answer has created!'
+      success: Question updated!
+  uk: Ukrainian
+  password_reset_mailer:
+    reset_email:
+      subject: 'Password reset | AskIt'
+  password_resets:
+    fail: Could not reset your password...
+    edit:
+      title: Enter new password
+      form:
+        submit: Reset my password!
     update:
-      success: 'Answer has updated!'
-  menu:
-    home: 'Home'
-    questions: 'Questions'
-    users: 'Users'
-
-
+      success: Your password was reset!
+    create:
+      success: Password reset instructions were sent to your email address.
+    new:
+      title: Reset password
+      form:
+        email: Email
+        submit: Send reset instructions
+        back: Back to sign in
+  sessions:
+    create:
+      invalid_creds: Incorrect email and/or password!
+      success: Welcome back, %{name}!
+    destroy:
+      success: See you later!
+    new:
+      form:
+        email: Email
+        password: Password
+        remember_me: Remember me
+        submit: Sign in!
+        forgot_password: I forgot my password
+      title: Log In
+  users:
+    create:
+      success: Welcome to the app, %{name}!
+    edit:
+      title: Edit profile
+    global:
+      forms:
+        register: Register
+        save: Save
+    new:
+      title: Registration
+    update:
+      success: Your profile was successfully updated!
