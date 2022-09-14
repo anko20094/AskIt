@@ -148,7 +148,10 @@ __metadata:
     bootstrap: ^5.2.0
     bootstrap-icons: ^1.9.1
     esbuild: ^0.15.6
+    jquery: ^3.6.1
     sass: ^1.54.8
+    select2: ^4.1.0-rc.0
+    select2-bootstrap-theme: ^0.1.0-beta.10
     tom-select: ^2.1.0
     turbolinks: ^5.2.0
   languageName: unknown
@@ -842,6 +845,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jquery@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "jquery@npm:3.6.1"
+  checksum: 6177d866a74f1137cad800f142c7cdbd5ab19cd4282546f8bdb4890c9f933b1d542ab96f2aa15d007e43c98de7315b0513e849ec5359d3ac5640f720892fe547
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -1161,6 +1171,20 @@ __metadata:
   bin:
     sass: sass.js
   checksum: 72893b2dc6284a6194fc560a578da57ab0082130ee558a96bcb9893cc7b517b836dac6e17b3a52b040975e70b4cdefb1268907df955a706b5bf70e3860afcfba
+  languageName: node
+  linkType: hard
+
+"select2-bootstrap-theme@npm:^0.1.0-beta.10":
+  version: 0.1.0-beta.10
+  resolution: "select2-bootstrap-theme@npm:0.1.0-beta.10"
+  checksum: 955aea36a000d4daf27321c7287e32a1c41e013bffea4d3d6978c86b23ab1dd651a6bab08b7d4f8b52a99015712afc7e800b6cba5578e131ab1946da98a5373d
+  languageName: node
+  linkType: hard
+
+"select2@npm:^4.1.0-rc.0":
+  version: 4.1.0-rc.0
+  resolution: "select2@npm:4.1.0-rc.0"
+  checksum: c27cefc3967d2082b2887869e8379f6e8e0ec2e02a268b7abbaec87fbda20abe4d62ac008b87a14f17bfa46dd27aa0b33ee793ed30142e3bc30ba408e208ad20
   languageName: node
   linkType: hard
 

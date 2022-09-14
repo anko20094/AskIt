@@ -6,7 +6,7 @@ import * as ActiveStorage from "@rails/activestorage"
 
 import 'bootstrap/js/dist/dropdown'
 import 'bootstrap/js/dist/collapse'
-import './select'
+import './scripts/select2'
 
 Rails.start()
 Turbolinks.start()
