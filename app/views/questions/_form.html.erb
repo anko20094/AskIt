@@ -1,23 +1,35 @@
 <%= render 'shared/errors', object: @question %>
 <%= form_with model: @question do |f| %>
-  <div class='mb-3 row'>
-    <div class='col-sm-2 com-form-label'>
-      <%= f.label :title, class: 'col-sm-2 col-form-label' %>
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :title %>
     </div>
 
-    <div class='col-sm-10'>
-      <%= f.text_field :title, placeholder: 'Title', class: 'form-control' %>
+    <div class="col-sm-10">
+      <%= f.text_field :title, class: 'form-control' %>
     </div>
   </div>
 
-  <div class='mb-3 row'>
-    <div class='col-sm-2 com-form-label'>
-      <%= f.label :body, class: 'col-sm-2 col-form-label' %>
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :body %>
     </div>
 
-    <div class='col-sm-10'>
+    <div class="col-sm-10">
       <%= f.text_area :body, class: 'form-control' %>
     </div>
   </div>
-  <%= f.submit 'Submit question', class: 'btn btn-primary' %>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :tags %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.collection_select :tag_ids, @question.tags, :id, :title, {}, multiple: true,
+                              class: 'js-multiple-select js-ajax-select w-100', data: {'ajax-url': '/api/tags'} %>
+    </div>
+  </div>
+
+  <%= f.submit t('global.button.submit'), class: 'btn btn-primary' %>
 <% end %>

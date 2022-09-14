@@ -12,6 +12,10 @@
           <small><%= question.formatted_created_at %></small>
         </time>
 
+        <div>
+          <%= render question.tags %>
+        </div>
+
         <p class="my-2">
           <%= truncate strip_tags(question.body), length: 150, omission: t('global.text.omission') %>
         </p>
