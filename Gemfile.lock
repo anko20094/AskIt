@@ -71,6 +71,7 @@ GEM
     ast (2.4.2)
     bcrypt (3.1.16)
     bindex (0.8.1)
+    blueprinter (0.25.3)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -140,8 +141,6 @@ GEM
       rails-i18n
       rainbow (>= 2.2.2, < 4.0)
       terminal-table (>= 1.5.1)
-    jbuilder (2.11.2)
-      activesupport (>= 5.0.0)
     json (2.5.1)
     lokalise_rails (2.0.0)
       ruby-lokalise-api (~> 4.0)
@@ -291,6 +290,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-import (~> 1.2)
   bcrypt (~> 3.1.7)
+  blueprinter
   bootsnap (>= 1.9.3)
   bullet
   byebug
@@ -300,7 +300,6 @@ DEPENDENCIES
   draper (~> 4.0)
   faker (~> 2)
   i18n-tasks (~> 0.9.34)
-  jbuilder
   lokalise_rails (~> 2)
   pagy (~> 4.10)
   pry-rails
