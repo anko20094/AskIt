@@ -10,7 +10,9 @@ class User < ApplicationRecord
 
   validate :password_presence
   validate :correct_old_password, on: :update, if: -> { password.present? }
-  validates :password, confirmation: true, allow_blank: true, length: { minimum: 4, maximum: 30 }
+  validates :password, confirmation: true, allow_blank: true,
+                       length: { minimum: 8, maximum: 70 }
+
   validates :email, presence: true, uniqueness: true, 'valid_email_2/email': true
   validate :password_complexity
 
@@ -41,8 +43,8 @@ class User < ApplicationRecord
   def set_gravatar_hash
     return if email.blank?
 
-    email_hash = Digest::MD5.hexdigest email.strip.downcase
-    self.gravatar_hash = email_hash
+    hash = Digest::MD5.hexdigest email.strip.downcase
+    self.gravatar_hash = hash
   end
 
   def digest(string)
@@ -63,10 +65,10 @@ class User < ApplicationRecord
 
   def password_complexity
     # Regexp extracted from https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
-    return if password.blank? || password =~ /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,70}$/
+    return if password.blank? || password =~ /(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/
 
-    msg = 'complexity requirement not met. Length should be 8-70 characters and' \
-          ' include: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
+    msg = 'complexity requirement not met. Length should be 8-70 characters and ' \
+          'include: 1 uppercase, 1 lowercase, 1 digit and 1 special character'
     errors.add :password, msg
   end
 

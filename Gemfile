@@ -6,54 +6,47 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 7.0.0', '>= 6.1.4.1'
+gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
-# Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
-gem 'jsbundling-rails', '~> 1.0', '>= 1.0.3'
-gem 'cssbundling-rails', '~> 1.1', '>= 1.1.1'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'webpacker', '6.0.0.rc.6'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+# gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'activerecord-import', '~> 1.2'
+gem 'caxlsx', '~> 3.1'
+gem 'caxlsx_rails', '~> 0.6'
+gem 'dotenv-rails', '~> 2.7'
+gem 'draper', '~> 4.0'
+gem 'i18n-tasks', '~> 0.9.34'
+gem 'lokalise_rails', '~> 2'
+gem 'pagy', '~> 4.10'
+gem 'rails-i18n', '~> 6'
+gem 'rubyXL', '~> 3.4'
+gem 'rubyzip', '~> 2'
+gem 'valid_email2', '~> 4.0'
+gem 'jbuilder'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.4', require: false
-
-# gem 'kaminari'
-gem 'activerecord-import', '~> 1.4.0'
-gem 'caxlsx', '~> 3.0'
-gem 'caxlsx_rails', '~> 0.6.3'
-gem 'dotenv-rails'
-gem 'draper', '~> 4.0'
-gem 'lokalise_rails', '~> 5'
-gem 'pagy', '~> 5.10'
-gem 'rails-i18n', '~> 7'
-gem 'rubyXL', '~> 3.4'
-gem 'rubyzip'
-gem 'valid_email2'
-gem "select2-rails"
+gem 'bootsnap', '>= 1.9.3', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker', '~> 2'
   gem 'pry-rails'
-  gem 'rubocop', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -63,17 +56,10 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'bullet'
   gem 'rack-mini-profiler', '~> 2.0'
+  gem 'rubocop', '~> 1.18', require: false
   gem 'rubocop-i18n', '~> 3', require: false
-
-end
-
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'factory_bot_rails'
-  gem 'webdrivers'
+  gem 'rubocop-performance', '~> 1.11', require: false
+  gem 'rubocop-rails', '~> 2.11', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

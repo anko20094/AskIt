@@ -1,4 +1,4 @@
-class AddUserIdToAnswers < ActiveRecord::Migration[7.0]
+class AddUserIdToAnswers < ActiveRecord::Migration[6.1]
   def change
     add_reference :answers, :user, null: false, foreign_key: true
   end

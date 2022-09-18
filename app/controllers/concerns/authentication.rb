@@ -9,6 +9,7 @@ module Authentication
 
     def current_user
       user = session[:user_id].present? ? user_from_session : user_from_token
+
       @current_user ||= user&.decorate
     end
 
@@ -22,7 +23,7 @@ module Authentication
 
       return unless user&.remember_token_authenticated?(token)
 
-      sign_in(user)
+      sign_in user
       user
     end
 
@@ -30,14 +31,22 @@ module Authentication
       current_user.present?
     end
 
-    def sign_in(user)
-      session[:user_id] = user.id
+    def require_authentication
+      return if user_signed_in?
+
+      flash[:warning] = t 'global.flash.not_signed_in'
+      redirect_to root_path
     end
 
-    def sign_out
-      forget(current_user)
-      session.delete :user_id
-      @current_user = nil
+    def require_no_authentication
+      return unless user_signed_in?
+
+      flash[:warning] = t 'global.flash.already_signed_in'
+      redirect_to root_path
+    end
+
+    def sign_in(user)
+      session[:user_id] = user.id
     end
 
     def remember(user)
@@ -52,18 +61,10 @@ module Authentication
       cookies.delete :remember_token
     end
 
-    def require_no_authentication
-      return unless user_signed_in?
-
-      flash[:warning] = 'You are not signed in!'
-      redirect_to root_path
-    end
-
-    def require_authentication
-      return if user_signed_in?
-
-      flash[:warning] = 'You are already signed in!'
-      redirect_to root_path
+    def sign_out
+      forget current_user
+      session.delete :user_id
+      @current_user = nil
     end
 
     helper_method :current_user, :user_signed_in?

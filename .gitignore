@@ -38,12 +38,5 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-.idea
-*.iml
-.idea/AskIt.iml
-.yarn
 
-/app/assets/builds/*
-!/app/assets/builds/.keep
-
-/node_modules
+.env

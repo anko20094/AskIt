@@ -1,23 +1,23 @@
 .field_with_errors {
-  .form_control {
+  .form-control {
     border-color: $red;
   }
   label {
     color: $red;
   }
-}
+} 
 
 .flag {
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: url('flags.png') no-repeat;
+  background: url('../images/flags.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
 }
 
-.uk-flag {
+.ru-flag {
   background-position: -1px -0px;
 
 }

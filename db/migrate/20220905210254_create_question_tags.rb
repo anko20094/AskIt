@@ -1,4 +1,4 @@
-class CreateQuestionTags < ActiveRecord::Migration[7.0]
+class CreateQuestionTags < ActiveRecord::Migration[6.1]
   def change
     create_table :question_tags do |t|
       t.belongs_to :question, null: false, foreign_key: true
