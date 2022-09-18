@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="#{<%= I18n.locale %>}">
+<html lang="<%= I18n.locale %>">
   <head>
-  <meta charset='utf-8'>
+    <meta charset="utf-8">
     <title><%= full_title(yield(:page_title)) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", media: 'all' %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body data-lang="#{<%= I18n.locale %>}">
+  <body data-lang="<%= I18n.locale %>">
     <%= yield :main_menu %>
-    <main class='container mt-3'>
-      <% flash.each do |k,v|%>
+    
+    <main class="container mt-3">
+      <% flash.each do |k, v| %>
         <%= tag.div v, class: "alert alert-#{k}", role: 'alert' %>
       <% end %>
 

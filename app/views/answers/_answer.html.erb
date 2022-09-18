@@ -18,13 +18,14 @@
           </div>
         </section>
 
-        <%= link_to t('global.button.edit'), edit_question_answer_path(question, answer),
-                    class: 'btn btn-info btn-sm' %>
+        <%= link_to t('global.button.edit'), edit_question_answer_path(question, answer), 
+          class: 'btn btn-info btn-sm' %>
         <%= link_to t('global.button.delete'), question_answer_path(question, answer), class: 'btn btn-danger btn-sm',
-                    data: {method: :delete, confirm: t('global.dialog.you_sure')} %>
+          data: {method: :delete, confirm: t('global.dialog.you_sure')} %>
       </div>
     </div>
   </div>
 <% end %>
+
 <%= render 'comments/commentable', commentable: answer, comment: @comment,
-           html_id: dom_id(answer, 'comment_form') %>
+  html_id: dom_id(answer, 'comment_form') %>

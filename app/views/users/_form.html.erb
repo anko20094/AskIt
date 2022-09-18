@@ -1,54 +1,58 @@
 <%= render 'shared/errors', object: @user %>
+
 <%= form_with model: @user do |f| %>
-  <div class='mb-3 row'>
-    <div class='col-sm-2 com-form-label'>
-      <%= f.label :email, class: 'col-sm-2 col-form-label' %>
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :email %>
     </div>
 
-    <div class='col-sm-10'>
-      <%= f.email_field :email, placeholder: 'E-mail', class: 'form-control form-control-lg' %>
-    </div>
-  </div>
-
-  <div class='mb-3 row'>
-    <div class='col-sm-2 com-form-label'>
-      <%= f.label :name, class: 'col-sm-2 col-form-label' %>
-    </div>
-
-    <div class='col-sm-10'>
-      <%= f.text_field :name, placeholder: 'Name', class: 'form-control form-control-lg' %>
+    <div class="col-sm-10">
+      <%= f.email_field :email, class: 'form-control form-control-lg' %>
     </div>
   </div>
 
-  <div class='mb-3 row'>
-    <div class='col-sm-2 com-form-label'>
-      <%= f.label :password, class: 'col-sm-2 col-form-label' %>
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :name %>
     </div>
 
-    <div class='col-sm-10'>
+    <div class="col-sm-10">
+      <%= f.text_field :name, class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :password %>
+    </div>
+
+    <div class="col-sm-10">
       <%= f.password_field :password, class: 'form-control form-control-lg' %>
     </div>
   </div>
 
-  <div class='mb-3 row'>
-    <div class='col-sm-2 com-form-label'>
-      <%= f.label :password_confirmation, class: 'col-sm-2 col-form-label' %>
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :password_confirmation %>
     </div>
 
-    <div class='col-sm-10'>
+    <div class="col-sm-10">
       <%= f.password_field :password_confirmation, class: 'form-control form-control-lg' %>
     </div>
   </div>
+
   <% unless @user.new_record? %>
-    <div class='mb-3 row'>
-      <div class='col-sm-2 com-form-label'>
-        <%= f.label :old_password, class: 'col-sm-2 col-form-label' %>
+    <div class="mb-3 row">
+      <div class="col-sm-2 col-form-label">
+        <%= f.label :old_password %>
       </div>
 
-      <div class='col-sm-10'>
+      <div class="col-sm-10">
         <%= f.password_field :old_password, class: 'form-control form-control-lg' %>
       </div>
     </div>
   <% end %>
-  <%= f.submit (@user.new_record? ? 'Register': 'Save'), class: 'btn btn-primary btn-lg' %>
+
+  <% t_key = (@user.new_record? ? "register" : "save") %>
+  <%= f.submit t(t_key, scope: 'users.global.forms'), class: 'btn btn-primary btn-lg' %>
 <% end %>

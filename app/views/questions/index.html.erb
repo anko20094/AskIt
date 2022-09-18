@@ -9,8 +9,8 @@
   <%= form_with url: questions_path, method: :get do |f| %>
     <div class="mb-3">
       <%= f.collection_select :tag_ids, (@tags || []), :id, :title, {selected: params[:tag_ids]},
-                              multiple: true, required: true,
-                              class: 'js-multiple-select js-ajax-select w-100', data: {'ajax-url': '/api/tags'} %>
+        multiple: true, required: true,
+        class: 'js-multiple-select js-ajax-select w-100', data: {'ajax-url': '/api/tags'} %>
     </div>
 
     <%= f.submit t('global.button.submit'), class: 'btn btn-primary' %>
@@ -18,6 +18,9 @@
 </section>
 
 <%= link_to t('.new'), new_question_path, class: 'btn btn-primary btn-lg mb-3' %>
+
 <%= pagination @pagy %>
+
 <%= render @questions %>
+
 <%= pagination @pagy %>

@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = 'Your profile was successfully updated!'
+      flash[:success] = t '.success'
       redirect_to edit_user_path(@user)
     else
       render :edit
@@ -23,8 +23,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      sign_in(@user)
-      flash[:success] = "Welcome to the app, #{current_user.name_or_email}!"
+      sign_in @user
+      flash[:success] = t('.success', name: current_user.name_or_email)
       redirect_to root_path
     else
       render :new
@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   private
 
   def set_user!
-    @user = User.find_by params[:id]
+    @user = User.find params[:id]
   end
 
   def user_params

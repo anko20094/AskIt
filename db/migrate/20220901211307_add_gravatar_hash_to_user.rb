@@ -1,4 +1,4 @@
-class AddGravatarHashToUser < ActiveRecord::Migration[7.0]
+class AddGravatarHashToUser < ActiveRecord::Migration[6.1]
   def change
     add_column :users, :gravatar_hash, :string
   end
