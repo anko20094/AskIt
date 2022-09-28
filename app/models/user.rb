@@ -13,13 +13,21 @@ class User < ApplicationRecord
   validate :password_presence
   validate :correct_old_password, on: :update, if: -> { password.present? && !admin_edit }
   validates :password, confirmation: true, allow_blank: true,
-            length: { minimum: 8, maximum: 70 }
+                       length: { minimum: 8, maximum: 70 }
 
   validates :email, presence: true, uniqueness: true, 'valid_email_2/email': true
   validate :password_complexity
   validates :role, presence: true
 
   before_save :set_gravatar_hash, if: :email_changed?
+
+  def guest?
+    false
+  end
+
+  def author?(obj)
+    obj.user == self
+  end
 
   def remember_me
     self.remember_token = SecureRandom.urlsafe_base64
@@ -52,7 +60,7 @@ class User < ApplicationRecord
 
   def digest(string)
     cost = if ActiveModel::SecurePassword
-                .min_cost
+              .min_cost
              BCrypt::Engine::MIN_COST
            else
              BCrypt::Engine.cost
