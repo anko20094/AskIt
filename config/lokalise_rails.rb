@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-LokaliseRails::GlobalCofig.config do |c|
+LokaliseRails::GlobalConfig.config do |c|
   # These are mandatory options that you must set before running rake tasks:
   c.api_token = ENV.fetch('LOKALISE_API_TOKEN', nil)
   c.project_id = ENV.fetch('LOKALISE_PROJECT_ID', nil)
