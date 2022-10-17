@@ -2,8 +2,8 @@
 
 LokaliseRails::GlobalConfig.config do |c|
   # These are mandatory options that you must set before running rake tasks:
-  c.api_token = ENV['LOKALISE_API_TOKEN']
-  c.project_id = ENV['LOKALISE_PROJECT_ID']
+  c.api_token = ENV.fetch('LOKALISE_API_TOKEN', nil)
+  c.project_id = ENV.fetch('LOKALISE_PROJECT_ID', nil)
 
   # Provide a custom path to the directory with your translation files:
   # c.locales_path = "#{Rails.root}/config/locales"
