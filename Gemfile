@@ -31,7 +31,7 @@ gem 'draper', '~> 4.0'
 gem 'i18n-tasks', '~> 0.9.34'
 gem 'lokalise_rails', '~> 3'
 gem 'pagy', '~> 5.0'
-gem 'pundit', '~> 2.2'
+gem 'pundit', '~> 2.1'
 gem 'rails-i18n', '~> 6'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip', '~> 2'
@@ -41,7 +41,7 @@ gem 'valid_email2', '~> 4.0'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.9.3', require: false
+gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -56,6 +56,7 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'bullet'
+  gem 'letter_opener'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'rubocop', '~> 1.18', require: false
   gem 'rubocop-i18n', '~> 3', require: false

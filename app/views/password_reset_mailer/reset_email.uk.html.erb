@@ -1,0 +1,8 @@
+<p>Хтось запросив скидання пароля для вашого облікового запису.</p>
+
+<p>
+  <%= link_to 'Скинути пароль',
+              edit_password_reset_url(user: {password_reset_token: @user.password_reset_token,
+                                             email: @user.email}, locale: :uk),
+              target: '_blank' %>
+</p>
