@@ -6,11 +6,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
+gem 'rails', '~> 7.0', '>= 7.0.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 6.0'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '6.0.0.rc.6'
@@ -28,15 +28,14 @@ gem 'caxlsx', '~> 3.1'
 gem 'caxlsx_rails', '~> 0.6'
 gem 'dotenv-rails', '~> 2.7'
 gem 'draper', '~> 4.0'
-gem 'i18n-tasks', '~> 0.9.34'
-gem 'lokalise_rails', '~> 3'
+gem 'i18n-tasks', '~> 1.0', '>= 1.0.12'
+gem 'lokalise_rails', '~> 5.1'
 gem 'pagy', '~> 5.0'
 gem 'pundit', '~> 2.1'
-gem 'rails-i18n', '~> 6'
+gem 'rails-i18n', '~> 7.0', '>= 7.0.5'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip', '~> 2'
-gem 'sidekiq', '~> 6.5', '>= 6.5.7'
-gem 'valid_email2', '~> 4.0'
+gem 'sidekiq', '~> 7.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -58,7 +57,7 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'bullet'
   gem 'letter_opener'
-  gem 'rack-mini-profiler', '~> 2.0'
+  gem 'rack-mini-profiler', '~> 3.0'
   gem 'rubocop', '~> 1.18', require: false
   gem 'rubocop-i18n', '~> 3', require: false
   gem 'rubocop-performance', '~> 1.11', require: false
