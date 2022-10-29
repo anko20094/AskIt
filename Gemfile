@@ -13,7 +13,9 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 6.0'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '6.0.0.rc.6'
+gem 'cssbundling-rails', '~> 1.1', '>= 1.1.1'
+gem 'jsbundling-rails', '~> 1.0', '>= 1.0.3'
+gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
