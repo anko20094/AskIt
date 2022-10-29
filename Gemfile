@@ -35,7 +35,7 @@ gem 'pundit', '~> 2.1'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.5'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip', '~> 2'
-gem 'sidekiq', '~> 7.0'
+gem 'sidekiq', '~> 6.5', '>= 6.5.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
