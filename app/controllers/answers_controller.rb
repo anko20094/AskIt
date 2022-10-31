@@ -10,15 +10,6 @@ class AnswersController < ApplicationController
   before_action :authorize_answer!
   after_action :verify_authorized
 
-  def update
-    if @answer.update answer_update_params
-      flash[:success] = t '.success'
-      redirect_to question_path(@question, anchor: dom_id(@answer))
-    else
-      render :edit
-    end
-  end
-
   def edit; end
 
   def create
@@ -32,10 +23,19 @@ class AnswersController < ApplicationController
     end
   end
 
+  def update
+    if @answer.update answer_update_params
+      flash[:success] = t '.success'
+      redirect_to question_path(@question, anchor: dom_id(@answer))
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     @answer.destroy
     flash[:success] = t '.success'
-    redirect_to question_path(@question)
+    redirect_to question_path(@question), status: :see_other
   end
 
   private
