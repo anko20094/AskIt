@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.3'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.0', '>= 7.0.4'
@@ -15,12 +15,13 @@ gem 'puma', '~> 6.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'cssbundling-rails', '~> 1.1', '>= 1.1.1'
 gem 'jsbundling-rails', '~> 1.0', '>= 1.0.3'
-gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
+gem 'propshaft', '~> 0.6.4'
+gem 'turbo-rails', '~> 1.3', '>= 1.3.2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -67,4 +68,4 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'tzinfo-data' # , platforms: %i[mingw mswin x64_mingw jruby]

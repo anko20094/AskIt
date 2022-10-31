@@ -7,20 +7,11 @@ class UsersController < ApplicationController
   before_action :authorize_user!
   after_action :verify_authorized
 
-  def edit; end
-
-  def update
-    if @user.update user_params
-      flash[:success] = t '.success'
-      redirect_to edit_user_path(@user)
-    else
-      render :edit
-    end
-  end
-
   def new
     @user = User.new
   end
+
+  def edit; end
 
   def create
     @user = User.new user_params
@@ -30,6 +21,15 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
+  end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t '.success'
+      redirect_to edit_user_path(@user)
+    else
+      render :edit
     end
   end
 

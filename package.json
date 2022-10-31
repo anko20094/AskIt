@@ -2,17 +2,16 @@
   "name": "ask-it",
   "private": true,
   "dependencies": {
+    "@hotwired/turbo-rails": "^7.2.4",
     "@popperjs/core": "^2.11.6",
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "autoprefixer": "^10.3.1",
+    "@rails/actioncable": "^7.0.4",
+    "@rails/activestorage": "^7.0.4",
+    "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "esbuild": "^0.15.12",
     "sass": "^1.55.0",
-    "tom-select": "^2.0.0",
-    "turbolinks": "^5.2.0"
+    "tom-select": "^2.2.2"
   },
   "version": "0.1.0",
   "browserslist": [
