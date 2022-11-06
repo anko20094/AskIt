@@ -17,3 +17,9 @@ Style/Documentation:
 
 Rails/FilePath:
   EnforcedStyle: arguments
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 30
