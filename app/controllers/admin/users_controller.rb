@@ -21,6 +21,8 @@ module Admin
       end
     end
 
+    def edit; end
+
     def create
       if params[:archive].present?
         UserBulkImportJob.perform_later create_blob, current_user
@@ -29,8 +31,6 @@ module Admin
 
       redirect_to admin_users_path
     end
-
-    def edit; end
 
     def update
       if @user.update user_params
