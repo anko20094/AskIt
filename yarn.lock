@@ -190,9 +190,9 @@ __metadata:
     "@rails/activestorage": ^7.0.4
     autoprefixer: ^10.4.13
     bootstrap: ^5.2.2
-    bootstrap-icons: ^1.9.1
-    esbuild: ^0.15.12
-    sass: ^1.55.0
+    bootstrap-icons: ^1.10.2
+    esbuild: ^0.15.14
+    sass: ^1.56.1
     tom-select: ^2.2.2
   languageName: unknown
   linkType: soft
@@ -229,7 +229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap-icons@npm:^1.9.1":
+"bootstrap-icons@npm:^1.10.2":
   version: 1.10.2
   resolution: "bootstrap-icons@npm:1.10.2"
   checksum: 1d73556a70b05c1b219c379243c24ea8186c773990b3bc5e8248825e7eae1c8137be90a2b7dd81fd46060a99558763886a069587a65a7f70a362bf5934e795e7
@@ -579,7 +579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.15.12":
+"esbuild@npm:^0.15.14":
   version: 0.15.14
   resolution: "esbuild@npm:0.15.14"
   dependencies:
@@ -1268,7 +1268,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.55.0":
+"sass@npm:^1.56.1":
   version: 1.56.1
   resolution: "sass@npm:1.56.1"
   dependencies:
