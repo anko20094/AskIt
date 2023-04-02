@@ -2,15 +2,15 @@
   "name": "ask-it",
   "private": true,
   "dependencies": {
-    "@hotwired/turbo-rails": "^7.2.4",
-    "@popperjs/core": "^2.11.6",
-    "@rails/actioncable": "^7.0.4",
-    "@rails/activestorage": "^7.0.4",
-    "autoprefixer": "^10.4.13",
-    "bootstrap": "^5.2.2",
-    "bootstrap-icons": "^1.9.1",
-    "esbuild": "^0.15.12",
-    "sass": "^1.55.0",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@popperjs/core": "^2.11.7",
+    "@rails/actioncable": "^7.0.4-3",
+    "@rails/activestorage": "^7.0.4-3",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "esbuild": "^0.17.15",
+    "sass": "^1.60.0",
     "tom-select": "^2.2.2"
   },
   "version": "0.1.0",
@@ -22,5 +22,5 @@
     "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.5.0"
 }
