@@ -1,5 +1,6 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/utilities";
@@ -27,4 +28,4 @@
 
 @import 'custom';
 
-@import 'tom-select/src/scss/tom-select.bootstrap5';
+@import 'tom-select/src/scss/tom-select';
